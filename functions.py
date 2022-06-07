@@ -67,7 +67,7 @@ def get_coords_delay_alch(x,y):
     return coords
 
 def get_coords_delay_tele(x,y):
-    deviation = numpy.random.normal(loc=15, scale=30, size=(2))
+    deviation = numpy.random.normal(loc=11, scale=15, size=(2))
     deviation = deviation.astype(int)
     delay_x = -abs((round(deviation[0], 0))) # Absolute value for no negatives, and rounding to two decimals.
     delay_y = -abs((round(deviation[1], 0))) 
